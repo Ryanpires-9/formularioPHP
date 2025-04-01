@@ -21,6 +21,8 @@
             @media (max-width: 825px) {  
                 .card {
                     width: 60%;
+                    margin-bottom: 5%;
+                    margin-top: 5%;
                 }
             }
             @media (max-width: 650px) {  
@@ -31,6 +33,8 @@
             @media (max-width: 575px) {  
                 .card {
                     width: 100%;
+                    margin-bottom: 0%;
+                    margin-top: 0%;
                 }
             }
         </style>
