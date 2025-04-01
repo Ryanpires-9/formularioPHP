@@ -16,43 +16,19 @@
                 <div class="mb-3">
                     <h1 style="text-align: center;">Formulário</h1>
                     <div class="row">
-                        <div class="col-8">   
-                            <label for="nome" class="form-label form-check ">Nome e Sobrenome</label>
+                        <label class="form-label form-check lblTitulo">- Dados Pessoais -</label>
+                        <div class="col">
+                            <label for="nome" class="form-label form-check ">Nome Completo</label>
                             <div class="mb-3 form-check">
                                 <input type="text" name="nome" id="nom" class="nome form-control" value="" placeholder="Digite o seu nome completo:" required>
                                 <span></span>
                             </div>
                         </div>
                         <div class="col">
-                            <label for="Rg" class="form-label form-check ">RG</label>
                             <div class="mb-3 form-check">
-                                <input type="text" name="Rg" id="Rg" class="RgCPF form-control" value="" maxlength="12" pattern="[0-9]{2}.[0-9]{3}.[0-9]{3}-[0-9]{1}" placeholder="Formato: XX.XXX.XXX-X" required>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <label for="txt_email" class="form-label form-check">Email</label>
-                            <div class="mb-3 form-check">
-                                <input type="email" name="email" id="txt_email" class="txt_email form-control" value="" placeholder="Digite o seu email:" required>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <label for="tel" class="form-label form-check">Telefone Celular</label>
-                            <div class="mb-3 form-check">
-                                <input type="tel" name="cel" id="tel" class="cel form-control" value="" maxlength="13" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="Formato: XX XXXXX-XXXX" required>
-                                <span></span>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="mb-3 form-check">
-                                <label for="sex" style="margin-bottom: 3px;">Gênero</label>
+                                <label for="sex" style="margin-bottom: 3px;">Sexo</label>
                                 <select class="form-select sexo" name="sexo" id="sex" aria-label="Default select example" required>
-                                    <option disabled selected>Selecione o seu sexo:</option>
+                                    <option disabled selected>Selecione o sexo:</option>
                                     <option value="Masculino">Masculino</option>
                                     <option value="Feminino">Feminino</option>
                                 </select>                
@@ -68,27 +44,37 @@
                             </div>
                         </div>
                         <div class="col">
+                            <label for="Rg" class="form-label form-check ">RG</label>
                             <div class="mb-3 form-check">
-                                <label for="esc" style="margin-bottom: 3px;">Escolaridade</label>
-                                <select class="form-select escola" name="escola" id="esc" aria-label="Default select example" required>
-                                    <option disabled selected>Selecione a sua escolaridade:</option>
-                                    <option value="Educação Infantil">Educação Infantil</option>
-                                    <option value="Ensino Fundamental">Ensino Fundamental</option>
-                                    <option value="Ensino Médio">Ensino Médio</option>
-                                    <option value="Ensino Superior(Graduação)">Ensino Superior(Graduação)</option>
-                                    <option value="Pós-Graduação">Pós-Graduação</option>
-                                    <option value="Mestrado">Mestrado</option>
-                                    <option value="Doutorado">Doutorado</option>
-                                </select>                
+                                <input type="text" name="Rg" id="Rg" class="RgCPF form-control" value="" maxlength="12" pattern="[0-9]{2}.[0-9]{3}.[0-9]{3}-[0-9]{1}" placeholder="XX.XXX.XXX-X" required>
+                                <span></span>
                             </div>
                         </div>
                     </div>
                     <div class="row">
+                        <label class="form-label form-check lblTitulo">- Contato -</label>
+                        <div class="col">
+                            <label for="txt_email" class="form-label form-check">Email</label>
+                            <div class="mb-3 form-check">
+                                <input type="email" name="email" id="txt_email" class="txt_email form-control" value="" placeholder="Digite o seu email:" required>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label for="tel" class="form-label form-check">Telefone Celular</label>
+                            <div class="mb-3 form-check">
+                                <input type="tel" name="cel" id="tel" class="cel form-control" value="" maxlength="13" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="XX XXXXX-XXXX" required>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="form-label form-check lblTitulo">- Endereço -</label>
                         <div class="col">
                             <div class="mb-3 form-check">
                                 <label for="est" style="margin-bottom: 3px;">Estado</label>
                                 <select class="form-select estado" name="estado" id="est" aria-label="Size 5 select example" required>
-                                    <option value="" disabled selected>Selecione o seu Estado:</option>
+                                    <option value="" disabled selected>Selecione o estado:</option>
                                     <option value="AC">Acre</option>
                                     <option value="AL">Alagoas</option>
                                     <option value="AP">Amapá</option>
@@ -119,20 +105,36 @@
                                 </select>                
                             </div>
                         </div>
-                        <div class="col-5">
+                        <div class="col">
                             <label for="cep" class="form-label form-check">CEP</label>
                             <div class="mb-3 form-check">
-                                <input type="text" name="cep" id="cep" class="cep form-control" maxlength="9" pattern="[0-9]{5}-[0-9]{3}" value="" placeholder="Formato: XXXXX-XXX" required>
+                                <input type="text" name="cep" id="cep" class="cep form-control" maxlength="9" pattern="[0-9]{5}-[0-9]{3}" value="" placeholder="XXXXX-XXX" required>
                                 <span></span>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-5">
+                        <label class="form-label form-check lblTitulo">- Situação -</label>
+                        <div class="col">
+                            <div class="mb-3 form-check">
+                                <label for="esc" style="margin-bottom: 3px;">Escolaridade</label>
+                                <select class="form-select escola" name="escola" id="esc" aria-label="Default select example" required>
+                                    <option disabled selected>Selecione a escolaridade:</option>
+                                    <option value="Educação Infantil">Educação Infantil</option>
+                                    <option value="Ensino Fundamental">Ensino Fundamental</option>
+                                    <option value="Ensino Médio">Ensino Médio</option>
+                                    <option value="Ensino Superior(Graduação)">Ensino Superior(Graduação)</option>
+                                    <option value="Pós-Graduação">Pós-Graduação</option>
+                                    <option value="Mestrado">Mestrado</option>
+                                    <option value="Doutorado">Doutorado</option>
+                                </select>                
+                            </div>
+                        </div>
+                        <div class="col">
                             <div class="mb-3 form-check">
                                 <label for="estCiv" style="margin-bottom: 3px;">Estado Civil</label>
                                 <select class="form-select estadoCiv" name="estadoCiv" id="estCiv" aria-label="Default select example" required>
-                                    <option disabled selected>Selecione o seu estado civil:</option>
+                                    <option disabled selected>Selecione o estado civil:</option>
                                     <option value="Solteiro">Solteiro</option>
                                     <option value="Casado">Casado</option>
                                     <option value="Divorciado">Divorciado</option>
