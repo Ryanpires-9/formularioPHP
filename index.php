@@ -64,7 +64,7 @@
                         <div class="col">
                             <label for="tel" class="form-label form-check">Telefone Celular</label>
                             <div class="mb-3 form-check">
-                                <input type="tel" name="cel" id="tel" class="cel form-control" value="" maxlength="13" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="XX XXXXX-XXXX" required>
+                                <input type="tel" name="cel" id="tel" class="cel form-control" value="" maxlength="13" required>
                                 <span></span>
                             </div>
                         </div>
